@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="" class="body-color-1">
+
+    <header>
+
+        <div class="d-flex">
+            <img src="Image/Titre_Mudworld.png" alt="Mudworld" class="little-img-size">
+            <img src="Image/Animation_vers_la_droite_Kwetch.gif" alt="Animation du personnage qui avance"
+                class="justify-content-center">
+            <button id="button-dark" class="box-button-Dark-mode">
+                <h2>Dark-Mode</h2>
+            </button>
+        </div>
+
+
+
+        <!--Breadcrumb c'est le fil d'ariane (c'est une référence au petit poucet je crois)-->
+        <nav id="breadcrumb" aria-label="Breadcrumb">
+
+            <ol class="breadcrumb">
+                <li><a href="page_1.html">Accueil</a></li>
+                <li><a href="page_2.html">Contexte</a></li>
+                <li aria-current="page">Page actuelle</li>
+            </ol>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!--cette balise section contient les ancres-->
+        <section class="vertical-space">
+
+            <div class="d-flex justify-content-center">
+
+                <article class="image-link">
+                    <a href="#section-LD">
+                        <img src="Image/Level_Design_Niveau_1_SB.png" alt="Level Design" class="img-size">
+                    </a>
+                </article>
+
+                <article>
+                    <a href="#section-CD">
+                        <img src="Image/premier_design_PP.png" alt="Character Design" class="img-size">
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <ul class="d-flex puce-liste justify-content-left">
+                <button class="tab tab-active" onclick="openText(event, 'LD')">Level Design</button>
+                <button class="tab" onclick="openText(event, 'CD')">Character Design</button>
+                <button class="tab" onclick="openText(event, 'GA')">Game Art</button>
+            </ul>
+            <ul class="d-flex flex-column">
+                <div id="LD" class="content LD active-text">Les niveaux diffèrent selon le contexte. L'ambiance général est un
+                marécage, mais certains niveaux peuvent être dans des égouts, sur une plage, dans une grotte.</div>
+                <div id="CD" class="content CD">Le character design a diverse inspirations, tout d'abord Tahm Kench, de League of
+                Legends, était
+                l'inspiration de base pour le protagoniste, mais par soucis de détail seul ses couleurs ont été gardé et
+                l'inspiration pour le sprite est devenu Goner Kid, de Undertale.</div>
+                <div id="GA" class="content ART">Le style général du jeu est d'avoir un air pollué et dérangeant, il faut avoir
+                l'impression que la Terre vie ses dernières années. Le hub principale est un marécage et la pluspart des
+                niveaux se passeront dans cette même ambiance. Les inspirations pour le style sont Shovel Knight pour
+                les graphismes, et Rainworld pour l'ambiance (on peut aussi y voir un peu de Ori).</div>
+            </ul>
+        </section>
+
+        <section class="d-flex justify-content-center">
+
+            <aside class="d-flex flex-column box-aside-left">
+                <h3>petite anecdote</h3>
+                <p>L'idée de ce jeu m'est venu en découvrant league of legend la semaine antérieur à la création du
+                    projet. Il y a un personnage dans le jeu qui s'appel Tahm Kench et c'est lui qui m'a inspiré pour le
+                    personnage principale et certains de ses pouvoirs.</p>
+            </aside>
+
+            <div class="d-flex">
+
+                <article class="box-article justify-content-center">
+                    <h2>Le pitch</h2>
+                    <p>Vous incarnez Kwetch l'un des derniers survivants de son espèce, enfin plus si vivant ! Kwetch
+                        est décédé à cause de la pollution des eaux. Malgré sa mort, il n'en reste pas moins déterminé à
+                        la survie de son espèce, et part donc à la recherche d'oeufs de poisson-chat. Son objectif est
+                        d'en ramener le plus possible au Bas-sain la seule étendue d'eau encore saine du monde.</p>
+                    <img src="" alt="">
+                </article>
+                <article class="box-article">
+                    <h2>Le gameplay</h2>
+                    <p>C'est un plateformer classique (bien qu'il faille réfléchir un peu pour le compléter à 100%). Il
+                        y aura quatre fin possible selon le nombre d'oeufs ramené au Bas-sain. On peut marcher et sauter
+                        par défaut et débloquer de nouveaux pouvoirs au fur-et-à-mesure, tel que le saut puissant ou le
+                        plannage.</p>
+                    <img src="" alt="">
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="d-flex justify-content-center">
+
+            <article class="box-article-big" id="section-LD">
+                <h2>Level Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, temporibus excepturi! Ducimus
+                    impedit doloremque esse totam ipsam consequuntur provident pariatur perferendis consequatur? Iste
+                    officiis modi amet nam expedita. Beatae, porro.</p>
+            </article>
+
+            <aside class="flex-column box-aside-right">
+                <h3>Inspirations</h3>
+                <p>Pour le level design mes inspirations se portent sur Hollow Knight et Mario 64. Le premier pour son
+                    système de galerie et l'importance des mouvements, et le second pour son système de hub centrale.</p>
+            </aside>
+
+
+
+        </section>
+
+        <section class="d-flex justify-content-center">
+
+            <aside class="flex-column box-aside-left">
+                <h3>Inspirations</h3>
+                <p>Pour le style graphique mes inspirations se portent sur Tahm Kench et Hollow Knight pour son style
+                    très clair-obscur</p>
+            </aside>
+
+            <article class="box-article-big" id="section-CD">
+                <h2>Character Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, aperiam reprehenderit! Consectetur
+                    eaque doloribus quam rerum maiores quo est, quos delectus eligendi neque id labore commodi itaque
+                    quisquam consequatur suscipit!</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="box-footer">
+
+        <ul class="horizontal-list puce-liste">
+
+            <li>
+                <img src="Image/logo_Facebook.webp" alt="logo Facebook" class="logo-size-3">
+            </li>
+            <li>
+                <img src="Image/logo_Instagram.webp" alt="logo Instagram" class="logo-size-2">
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/c%C3%A9dric-fleury-142843290/" target="_blank">
+                    <img src="Image/logo_LinkedIn.webp" alt="logo LinkedIn" class="logo-size-1">
+                </a>
+            </li>
+            <li>
+                <img src="Image/logo_Youtube.webp" alt="logo Youtube" class="logo-size-2">
+            </li>
+
+        </ul>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
